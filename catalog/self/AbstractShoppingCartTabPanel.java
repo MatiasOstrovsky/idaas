@@ -41,7 +41,6 @@ import org.apache.wicket.Component;
 import org.apache.wicket.ajax.AjaxRequestTarget;
 import org.apache.wicket.behavior.AttributeAppender;
 import org.apache.wicket.behavior.Behavior;
-import org.apache.wicket.extensions.markup.html.repeater.data.sort.SortOrder;
 import org.apache.wicket.markup.html.WebMarkupContainer;
 import org.apache.wicket.markup.html.form.Form;
 import org.apache.wicket.model.Model;
@@ -49,7 +48,7 @@ import org.apache.wicket.model.Model;
 public abstract class AbstractShoppingCartTabPanel<R extends AbstractRoleType> extends BasePanel {
 	private static final long serialVersionUID = 1L;
 	private static final String ID_SHOPPING_CART_CONTAINER = "shoppingCartContainer";
-	protected static final String ID_SHOPPING_CART_ITEMS_PANEL = "shoppingCartItemsPanel";
+	private static final String ID_SHOPPING_CART_ITEMS_PANEL = "shoppingCartItemsPanel";
 	private static final String ID_SEARCH_FORM = "searchForm";
 	private static final String ID_SEARCH = "search";
 	private static final String ID_ADD_ALL_BUTTON = "addAllButton";
@@ -97,7 +96,7 @@ public abstract class AbstractShoppingCartTabPanel<R extends AbstractRoleType> e
 		target.add(new Component[]{this});
 	}
 
-	protected void initShoppingCartItemsPanel(WebMarkupContainer shoppingCartContainer) {
+	private void initShoppingCartItemsPanel(WebMarkupContainer shoppingCartContainer) {
       GridViewComponent<ObjectDataProvider<AssignmentEditorDto, AbstractRoleType>> catalogItemsGrid = new 3(this, "shoppingCartItemsPanel", new 2(this));
       catalogItemsGrid.add(new Behavior[]{new 4(this)});
       catalogItemsGrid.setOutputMarkupId(true);
@@ -136,9 +135,8 @@ public abstract class AbstractShoppingCartTabPanel<R extends AbstractRoleType> e
 
 	}
 
-	protected ObjectDataProvider<AssignmentEditorDto, AbstractRoleType> getTabPanelProvider() {
+	private ObjectDataProvider<AssignmentEditorDto, AbstractRoleType> getTabPanelProvider() {
       ObjectDataProvider provider = new 7(this, this, AbstractRoleType.class);
-      provider.setSort("requestable", SortOrder.ASCENDING);
       return provider;
    }
 
