@@ -12,8 +12,8 @@ import org.apache.wicket.Component;
 class AbstractShoppingCartTabPanel$7 extends ObjectDataProvider<AssignmentEditorDto, AbstractRoleType> {
 	private static final long serialVersionUID = 1L;
 
-	AbstractShoppingCartTabPanel$7(AbstractShoppingCartTabPanel this$0, Component x0, Class x1) {
-		super(x0, x1);
+	AbstractShoppingCartTabPanel$7(AbstractShoppingCartTabPanel this$0, Component component, Class type) {
+		super(component, type);
 		this.this$0 = this$0;
 	}
 
@@ -21,10 +21,10 @@ class AbstractShoppingCartTabPanel$7 extends ObjectDataProvider<AssignmentEditor
 		AssignmentEditorDto dto = AssignmentEditorDto.createDtoFromObject((ObjectType) obj.asObjectable(),
 				UserDtoStatus.ADD, this.this$0.getPageBase());
 		if (!this.this$0.getRoleCatalogStorage().isMultiUserRequest()) {
-			dto.setAlreadyAssigned(AbstractShoppingCartTabPanel.access$200(this.this$0, obj, dto));
-			dto.setDefualtAssignmentConstraints(AbstractShoppingCartTabPanel.access$300(this.this$0) == null
+			dto.setAlreadyAssigned(AbstractShoppingCartTabPanel.access$300(this.this$0, obj, dto));
+			dto.setDefualtAssignmentConstraints(AbstractShoppingCartTabPanel.access$400(this.this$0) == null
 					? null
-					: AbstractShoppingCartTabPanel.access$300(this.this$0).getDefaultAssignmentConstraints());
+					: AbstractShoppingCartTabPanel.access$400(this.this$0).getDefaultAssignmentConstraints());
 		}
 
 		return dto;
