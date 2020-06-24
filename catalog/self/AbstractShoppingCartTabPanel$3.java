@@ -14,8 +14,8 @@ class AbstractShoppingCartTabPanel$3
 			GridViewComponent<ObjectDataProvider<AssignmentEditorDto, AbstractRoleType>> {
 	private static final long serialVersionUID = 1L;
 
-	AbstractShoppingCartTabPanel$3(AbstractShoppingCartTabPanel this$0, String x0, IModel x1) {
-		super(x0, x1);
+	AbstractShoppingCartTabPanel$3(AbstractShoppingCartTabPanel this$0, String id, IModel dataProviderModel) {
+		super(id, dataProviderModel);
 		this.this$0 = this$0;
 	}
 
