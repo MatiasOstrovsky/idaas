@@ -8,8 +8,9 @@ import org.apache.wicket.model.IModel;
 class AbstractShoppingCartTabPanel$1 extends SearchPanel {
 	private static final long serialVersionUID = 1L;
 
-	AbstractShoppingCartTabPanel$1(AbstractShoppingCartTabPanel this$0, String x0, IModel x1, boolean x2) {
-		super(x0, x1, x2);
+	AbstractShoppingCartTabPanel$1(AbstractShoppingCartTabPanel this$0, String id, IModel model,
+			boolean advancedSearch) {
+		super(id, model, advancedSearch);
 		this.this$0 = this$0;
 	}
 
