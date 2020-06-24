@@ -9,13 +9,13 @@ import org.apache.wicket.model.IModel;
 class AbstractShoppingCartTabPanel$5 extends AjaxButton {
 	private static final long serialVersionUID = 1L;
 
-	AbstractShoppingCartTabPanel$5(AbstractShoppingCartTabPanel this$0, String x0, IModel x1) {
-		super(x0, x1);
+	AbstractShoppingCartTabPanel$5(AbstractShoppingCartTabPanel this$0, String id, IModel model) {
+		super(id, model);
 		this.this$0 = this$0;
 	}
 
 	public void onClick(AjaxRequestTarget ajaxRequestTarget) {
-		AbstractShoppingCartTabPanel.access$000(this.this$0, ajaxRequestTarget);
+		AbstractShoppingCartTabPanel.access$100(this.this$0, ajaxRequestTarget);
 	}
 
 	protected void updateAjaxAttributes(AjaxRequestAttributes attributes) {
