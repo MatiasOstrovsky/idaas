@@ -19,7 +19,7 @@ class AbstractShoppingCartTabPanel$6 extends VisibleEnableBehaviour {
 
 	public boolean isEnabled() {
 		int assignmentsLimit = AssignmentsUtil.loadAssignmentsLimit(
-				new OperationResult(AbstractShoppingCartTabPanel.access$100()), this.this$0.getPageBase());
+				new OperationResult(AbstractShoppingCartTabPanel.access$200()), this.this$0.getPageBase());
 		return !AssignmentsUtil.isShoppingCartAssignmentsLimitReached(assignmentsLimit, this.this$0.getPageBase());
 	}
 }
