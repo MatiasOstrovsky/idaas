@@ -5,8 +5,8 @@ import java.util.List;
 import javax.xml.namespace.QName;
 
 class UserViewTabPanel$3 extends LoadableModel<List<QName>> {
-	UserViewTabPanel$3(UserViewTabPanel this$0, boolean x0) {
-		super(x0);
+	UserViewTabPanel$3(UserViewTabPanel this$0, boolean alwaysReload) {
+		super(alwaysReload);
 		this.this$0 = this$0;
 	}
 
