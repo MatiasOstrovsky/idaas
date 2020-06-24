@@ -11,8 +11,8 @@ import org.apache.wicket.model.IModel;
 class AbstractShoppingCartTabPanel$3$1 extends RoleCatalogItemButton {
 	private static final long serialVersionUID = 1L;
 
-	AbstractShoppingCartTabPanel$3$1(3 this$1, String x0, IModel x1) {
-      super(x0, x1);
+	AbstractShoppingCartTabPanel$3$1(3 this$1, String id, IModel model) {
+      super(id, model);
       this.this$1 = this$1;
    }
 
