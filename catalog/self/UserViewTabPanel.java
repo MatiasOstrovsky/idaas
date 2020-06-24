@@ -92,7 +92,7 @@ public class UserViewTabPanel extends AbstractShoppingCartTabPanel<AbstractRoleT
    }
 
 	protected void appendItemsPanelStyle(WebMarkupContainer container) {
-		container.add(new Behavior[]{AttributeAppender.append("class", "col-md-12")});
+		container.add(new Behavior[]{AttributeAppender.append("class", "col-md-9")});
 	}
 
 	protected ObjectQuery createContentQuery() {
