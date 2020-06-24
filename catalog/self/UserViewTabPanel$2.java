@@ -10,8 +10,9 @@ import org.apache.wicket.model.StringResourceModel;
 class UserViewTabPanel$2 extends UserSelectionButton {
 	private static final long serialVersionUID = 1L;
 
-	UserViewTabPanel$2(UserViewTabPanel this$0, String x0, IModel x1, boolean x2, StringResourceModel x3) {
-		super(x0, x1, x2, x3);
+	UserViewTabPanel$2(UserViewTabPanel this$0, String id, IModel selectedUsersListModel, boolean isMultiSelection,
+			StringResourceModel titleModel) {
+		super(id, selectedUsersListModel, isMultiSelection, titleModel);
 		this.this$0 = this$0;
 	}
 
