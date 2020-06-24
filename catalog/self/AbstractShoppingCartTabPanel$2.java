@@ -11,6 +11,6 @@ class AbstractShoppingCartTabPanel$2 extends LoadableModel<ObjectDataProvider<As
 	}
 
 	protected ObjectDataProvider<AssignmentEditorDto, AbstractRoleType> load() {
-		return this.this$0.getTabPanelProvider();
+		return AbstractShoppingCartTabPanel.access$000(this.this$0);
 	}
 }
